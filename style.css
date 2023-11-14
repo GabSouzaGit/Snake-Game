@@ -1,0 +1,28 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+canvas {
+    height: 500px;
+    width: 550px;
+    border: 1px solid #000000;
+}
+
+#game {
+    text-align: center;
+}
+
+#game * {
+    margin: 35px;
+}
