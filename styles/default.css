@@ -1,0 +1,22 @@
+:root {
+    --theme: 80;
+    --background: hsl(var(--theme), 90%, 40%);
+    --shadow: hsl(var(--theme), 90%, 20%)
+}
+
+button {
+    padding: 12px 8px;
+    background: var(--background);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out all;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    box-shadow: 3px 3px 0px #000000;
+}

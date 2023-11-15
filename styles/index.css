@@ -10,7 +10,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
 canvas {
@@ -21,8 +20,14 @@ canvas {
 
 #game {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-#game * {
-    margin: 35px;
+#statistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 12px;
+    font-size: 18px;
 }
