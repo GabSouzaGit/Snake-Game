@@ -1,7 +1,4 @@
-const DEFAULT_DIMENSIONS = {
-    height: 20,
-    width: 20
-};
+const DEFAULT_DIMENSIONS = 20;
 
-export const width = DEFAULT_DIMENSIONS.width;
-export const height = DEFAULT_DIMENSIONS.height
+export const width = DEFAULT_DIMENSIONS;
+export const height = DEFAULT_DIMENSIONS;
