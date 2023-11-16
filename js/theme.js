@@ -13,10 +13,3 @@ toggleTheme.addEventListener('click', () => {
 
     whiteTheme();
 });
-
-
-/*
-<div id="configs">
-        <button id="toggle-theme"> Alterar tema </button>
-    </div>
-*/

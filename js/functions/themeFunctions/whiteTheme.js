@@ -7,6 +7,10 @@ const white = {
     slide: "hsl(0, 0%, 95%)"
 }
 
+/**
+ * @description Altera o tema atual da pagina para "claro".
+ */
+
 function whiteTheme(){
     page.style.setProperty('--background', white.background);
     page.style.setProperty('--lines', white.lines);
