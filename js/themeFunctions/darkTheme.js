@@ -6,20 +6,11 @@ const dark = {
     text: "#ffffff"
 }
 
-const white = {
-    background: "#ffffff",
-    lines: "#000000",
-    text: "#000000"
-}
-
-export function darkTheme(){
+function darkTheme(){
     page.style.setProperty('--background', dark.background);
     page.style.setProperty('--lines', dark.lines);
     page.style.setProperty('--default-text', dark.lines);
 };
 
-export function whiteTheme(){
-    page.style.setProperty('--background', white.background);
-    page.style.setProperty('--lines', white.lines);
-    page.style.setProperty('--default-text', white.lines);
-}
+export default darkTheme;
+

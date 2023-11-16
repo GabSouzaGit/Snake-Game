@@ -1,4 +1,5 @@
-import { darkTheme, whiteTheme } from "./js/theme/themes.js";
+import darkTheme from "./themeFunctions/whiteTheme.js"
+import whiteTheme from "./themeFunctions/darkTheme.js";
 
 const toggleTheme = document.querySelector('#toggle-theme');
 let dark = false;
