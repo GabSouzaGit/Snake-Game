@@ -6,13 +6,6 @@
     height: 100vh;
 }
 
-#slide {
-    position: fixed;
-    height: 100vh;
-    background: red;
-    width: 380px;
-}
-
 canvas {
     height: 500px;
     width: 550px;

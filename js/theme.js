@@ -1,5 +1,5 @@
-import darkTheme from "./functions/themeFunctions/whiteTheme.js"
-import whiteTheme from "./functions/themeFunctions/darkTheme.js";
+import darkTheme from "./functions/themeFunctions/darkTheme.js"
+import whiteTheme from "./functions/themeFunctions/whiteTheme.js";
 
 const toggleTheme = document.querySelector('#toggle-theme');
 let dark = false;
@@ -13,6 +13,7 @@ toggleTheme.addEventListener('click', () => {
 
     whiteTheme();
 });
+
 
 /*
 <div id="configs">

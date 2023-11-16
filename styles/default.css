@@ -3,7 +3,7 @@
     --lines: #000000;
     --default-text: #000000;
     --background: #ffffff;
-    --shadow: hsl(80, 90%, 20%);
+    --slide: hsl(0, 0%, 95%);
 }
 
 * {
@@ -25,24 +25,6 @@ header {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-}
-
-#menu {
-    height: 35px;
-    width: 35px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-#menu div {
-    height: 2px;
-    width: 90%;
-    margin: 4px;
-    background: #000000;
 }
 
 button {
