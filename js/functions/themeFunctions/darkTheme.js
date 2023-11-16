@@ -1,4 +1,4 @@
-import page from "../constants/DEFAULT_PAGE.js"
+import page from "../../constants/DEFAULT_PAGE.js"
 
 const dark = {
     background: "hsl(220, 50%, 10%)",

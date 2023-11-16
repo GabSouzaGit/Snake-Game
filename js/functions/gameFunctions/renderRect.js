@@ -1,5 +1,5 @@
-import { canvas, context } from "../constants/DEFAULT_CANVAS.js";
-import { width, height } from "../constants/DEFAULT_DIMENSIONS.js";
+import { canvas, context } from "../../constants/DEFAULT_CANVAS.js";
+import { width, height } from "../../constants/DEFAULT_DIMENSIONS.js";
 
 /**
  * @param {number} x - Posição "x" da figura (horizontal).

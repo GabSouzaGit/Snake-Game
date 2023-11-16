@@ -1,4 +1,4 @@
-import { canvas } from "../constants/DEFAULT_CANVAS.js";
+import { canvas } from "../../constants/DEFAULT_CANVAS.js";
 import defineKeyPressing from "./keyPressing.js";
 import renderRect from "./renderRect.js";
 

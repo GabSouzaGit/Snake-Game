@@ -1,4 +1,4 @@
-import page from "../constants/DEFAULT_PAGE.js"
+import page from "../../constants/DEFAULT_PAGE.js"
 
 const white = {
     background: "#ffffff",
