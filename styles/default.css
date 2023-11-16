@@ -1,22 +1,63 @@
 :root {
-    --theme: 80;
-    --background: hsl(var(--theme), 90%, 40%);
-    --shadow: hsl(var(--theme), 90%, 20%)
+    --containers: hsl(80, 90%, 50%);
+    --lines: #000000;
+    --default-text: #000000;
+    --background: #ffffff;
+    --shadow: hsl(80, 90%, 20%);
+}
+
+* {
+    font-family: monospace;
+    color: var(--default-text);
+    transition: 0.3s all;
+}
+
+body {
+    background: var(--background);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#menu {
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#menu div {
+    height: 2px;
+    width: 90%;
+    margin: 4px;
+    background: #000000;
 }
 
 button {
     padding: 12px 8px;
-    background: var(--background);
-    border: none;
-    color: white;
+    border: 2px solid var(--lines);
+    background: none;
+    color: var(--text);
     font-weight: bold;
     cursor: pointer;
-    transition: 0.5s ease-in-out all;
-    border: 2px solid #000000;
     border-radius: 4px;
     font-size: 16px;
+    box-shadow: 3px 3px 0px var(--lines);
 }
 
-button:hover {
-    box-shadow: 3px 3px 0px #000000;
+div#title {
+    font-size: 28px;
+    font-weight: bold;
 }

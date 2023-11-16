@@ -11,7 +11,8 @@ function renderRect(x, y){
    context.clearRect(0, 0, canvas.width, canvas.height);
    context.beginPath();
    context.rect(x, y, width, height);
-   context.fill()
+   context.fillStyle = "hsl(80, 100%, 40%)";
+   context.fill();
    context.closePath();
 }
 

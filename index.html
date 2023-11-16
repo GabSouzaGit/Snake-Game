@@ -9,24 +9,37 @@
     <title> Jogo da cobrinha (tentativa) </title>
 </head>
 <body>
-    <div id="game">
-        <h1> Snake-Game 🐍 </h1>
-        <p>
-            Mova a cobra com qualquer uma das setas. Divirta-se!
-            <div>
-                <button id="start"> Iniciar! </button>
+    <div id="slide">
+        
+    </div>
+    <div id="content">
+        <header>
+            <div id="title"> Snake-Game 🐍 </div>
+            <div id="menu">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-        </p>
-        <canvas></canvas>
-        <div id="statistics">
-            <div id="points">
-                <b>Pontuação: </b>x
-            </div>
-            <div id="deaths">
-                <b>Mortes: </b>x
+        </header>
+        <div id="game">
+            <p>
+                Mova a cobra com qualquer uma das setas. Divirta-se!
+                <div id="buttons">
+                    <button id="start"> Iniciar! </button>
+                </div>
+            </p>
+            <canvas></canvas>
+            <div id="statistics">
+                <div id="points">
+                    <b>Pontuação: </b>0
+                </div>
+                <div id="deaths">
+                    <b>Mortes: </b>0
+                </div>
             </div>
         </div>
     </div>
-    <script src="script.js" type="module"></script>
+    <script src="theme.js" type="module"></script>
+    <script src="game.js" type="module"></script>
 </body>
 </html>
