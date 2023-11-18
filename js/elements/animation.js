@@ -1,4 +1,5 @@
 const animation = {
+    direction: 'ArrowLeft',
     id: null
 }
 

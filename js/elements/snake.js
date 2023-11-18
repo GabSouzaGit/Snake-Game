@@ -13,13 +13,16 @@ const snake = {
             direction: 'ArrowLeft',
             x: Math.floor(canvas.width / 2) - width,
             y: Math.floor(canvas.height / 2)
-        },
-        {
-            direction: 'ArrowLeft',
-            x: Math.floor(canvas.width / 2) - width * 2,
-            y: Math.floor(canvas.height / 2)
         }
     ]
+}
+
+for(let i = 2; i < 22; i++){
+    snake.structure[i] = {
+        direction: 'ArrowLeft',
+        x: Math.floor(canvas.width / 2) - width * i,
+        y: Math.floor(canvas.height / 2)
+    }
 }
 
 export default snake;
