@@ -1,5 +1,5 @@
-import { canvas } from "../../constants/DEFAULT_CANVAS.js";
-import { width, height } from "../../constants/DEFAULT_DIMENSIONS.js";
+import { canvas } from "../../../constants/DEFAULT_CANVAS.js";
+import { width, height } from "../../../constants/DEFAULT_DIMENSIONS.js";
 
 /**
  * @description Avalia e simula a colisão do objeto no canvas.
@@ -8,7 +8,7 @@ import { width, height } from "../../constants/DEFAULT_DIMENSIONS.js";
  * @returns {object} Novas posições (x, y) considerando a colisão do objeto.
  */
 
-function collision(x, y){
+function snakeCollision(x, y){
     if(x > canvas.width - width){
         x = canvas.width - width;
     }
@@ -25,4 +25,4 @@ function collision(x, y){
     return {posx: x, posy: y}
 }
 
-export default collision;
+export default snakeCollision;

@@ -1,4 +1,5 @@
-import moveSnake from "./moveSnake.js";
+import listenMoviment from "./movimentation/listenMoviment.js";
+import renderSnake from "./movimentation/renderSnake.js";
 
 /**
  * @description Define as funções que serão disparadas em cada seta.
@@ -7,8 +8,9 @@ import moveSnake from "./moveSnake.js";
 function defineKeyPressing(){
     document.addEventListener('keydown', (event) => {
         try {
-            const eventExecution = moveSnake(event.key);
+            const eventExecution = listenMoviment(event.key);
             eventExecution();
+            renderSnake();
         }catch(exception){
             console.log('Foi a lugar nenhum: ', exception);
         }

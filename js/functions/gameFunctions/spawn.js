@@ -1,5 +1,6 @@
-import defineKeyPressing from "./keyPressing.js";
 import snake from "../../elements/snake.js";
+import defineKeyPressing from "./keyPressing.js";
+import renderSnake from "./movimentation/renderSnake.js";
 
 /**
  * @description Inicia a "snake" no centro do canvas.
@@ -7,9 +8,7 @@ import snake from "../../elements/snake.js";
 
 function spawn(){
     defineKeyPressing();
-    snake.structure.map(part => {
-        // Deixa pra depois
-    })
+    renderSnake();
 }
 
 export default spawn;
