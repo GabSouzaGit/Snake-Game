@@ -2,7 +2,7 @@ import page from "../../constants/DEFAULT_PAGE.js"
 
 const dark = {
     background: "hsl(220, 50%, 10%)",
-    lines: "#ffffff",
+    lines: "hsl(220, 50%, 30%)",
     text: "#ffffff",
     slide: "hsl(220, 50%, 5%)"
 }
@@ -14,7 +14,7 @@ const dark = {
 function darkTheme(){
     page.style.setProperty('--background', dark.background);
     page.style.setProperty('--lines', dark.lines);
-    page.style.setProperty('--default-text', dark.lines);
+    page.style.setProperty('--default-text', dark.text);
     page.style.setProperty('--slide', dark.slide);
 };
 
