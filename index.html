@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./styles/default.css"/>
     <link rel="stylesheet" href="./styles/index.css"/>
     <link rel="stylesheet" href="./styles/menu.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
     <title> Jogo da cobrinha (tentativa) </title>
 </head>
 <body>
@@ -35,7 +37,7 @@
         </header>
         <div id="game">
             <p>
-                Mova a cobra com qualquer uma das setas. Divirta-se!
+                <span id="controls"> Mova a cobra com qualquer uma das setas. Divirta-se! </span>
                 <div id="buttons">
                     <button id="start"> Iniciar! </button>
                 </div>
@@ -54,5 +56,6 @@
     <script src="./js/theme.js" type="module"></script>
     <script src="./js/menu.js" type="module"></script>
     <script src="./js/game.js" type="module"></script>
+    <script src="./js/driver.js" type="module"></script>
 </body>
 </html>
