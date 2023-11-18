@@ -1,7 +1,8 @@
 import { width, height } from "../../../constants/DEFAULT_DIMENSIONS.js";
+import animation from "../../../elements/animation.js";
 import snake from "../../../elements/snake.js";
+import moveSnake from "./moveSnake.js";
 import snakeCollision from "./snakeCollision.js";
-import renderSnake from "./renderSnake.js";
 import updateSnake from "./updateSnake.js";
 
 /**
@@ -15,33 +16,32 @@ function log(){
 }
 
 function listenMoviment(key){
+    clearInterval(animation.id);
+    const { x, y } = snake.structure[snake.structure.length - 1];
+    const time = 200
+
     const permittedDirections = {
         'ArrowUp': () => {
-            const { x, y } = snake.structure[snake.structure.length - 1]
-            const { posx, posy } = snakeCollision(x, y - height);
-            updateSnake(posx, posy);
+            const up = moveSnake(x, y - height, key);
+            animation.id = setInterval(up, time);
             log();
         },
     
         'ArrowDown': () => {
-            const { x, y } = snake.structure[snake.structure.length - 1]
-            const { posx, posy } = snakeCollision(x, y + height);
-            updateSnake(posx, posy);
+            const down = moveSnake(x, y + height, key);
+            animation.id = setInterval(down, time);
             log();
         },
         
         'ArrowLeft': () => {
-            const { x, y } = snake.structure[snake.structure.length - 1]
-            const { posx, posy } = snakeCollision(x - width, y);
-            updateSnake(posx, posy);
+            const left = moveSnake(x - width, y, key);
+            animation.id = setInterval(left, time);
             log();
-            
         },
 
         'ArrowRight': () => {
-            const { x, y } = snake.structure[snake.structure.length - 1]
-            const { posx, posy } = snakeCollision(x + width, y);
-            updateSnake(posx, posy);
+            const right = moveSnake(x + width, y, key);
+            animation.id = setInterval(right, time);
             log();
         }
     }    
