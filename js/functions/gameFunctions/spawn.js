@@ -1,6 +1,4 @@
-import { canvas } from "../../constants/DEFAULT_CANVAS.js";
 import defineKeyPressing from "./keyPressing.js";
-import renderRect from "./renderRect.js";
 import snake from "../../elements/snake.js";
 
 /**
@@ -9,7 +7,9 @@ import snake from "../../elements/snake.js";
 
 function spawn(){
     defineKeyPressing();
-    renderRect(snake.position.x, snake.position.x);
+    snake.structure.map(part => {
+        // Deixa pra depois
+    })
 }
 
 export default spawn;

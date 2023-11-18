@@ -1,7 +1,6 @@
 import { width, height } from "../../constants/DEFAULT_DIMENSIONS.js";
 import snake from "../../elements/snake.js";
 import collision from "./collision.js";
-import renderRect from "./renderRect.js";
 
 /**
  * @description Retorna uma função que move o objeto "snake" pelo canvas de acordo com a tecla do teclado.
@@ -9,35 +8,39 @@ import renderRect from "./renderRect.js";
  * @returns {function} Função relacionada a chave do teclado.
  */
 
+function log(){
+    console.log(snake.structure[0])
+}
+
 function moveSnake(key){
     const permittedDirections = {
         'ArrowUp': () => {
-            const { x, y } = snake.position;
-            const { posy } = collision(x, y - height);
-            snake.position.y = posy;
-            renderRect(snake.position.x, snake.position.y)
+            const { x, y } = snake.structure[0]
+            const { posx, posy } = collision(x, y - height);
+            snake.structure[0] = { x: posx, y: posy }
+            log();
         },
     
         'ArrowDown': () => {
-            const { x, y } = snake.position;
-            const { posy } = collision(x, y + height);
-            snake.position.y = posy;
-            renderRect(snake.position.x, snake.position.y)
+            const { x, y } = snake.structure[0]
+            const { posx, posy } = collision(x, y + height);
+            snake.structure[0] = { x: posx, y: posy }    
+            log();
         },
         
         'ArrowLeft': () => {
-            const { x, y } = snake.position;
-            const { posx } = collision(x - width, y);
-            snake.position.x = posx;
-            renderRect(snake.position.x, snake.position.y)
+            const { x, y } = snake.structure[0]
+            const { posx, posy } = collision(x - width, y);
+            snake.structure[0] = { x: posx, y: posy }    
+            log();
             
         },
 
         'ArrowRight': () => {
-            const { x, y } = snake.position;
-            const { posx } = collision(x + width, y);
-            snake.position.x = posx;
-            renderRect(snake.position.x, snake.position.y)
+            const { x, y } = snake.structure[0]
+            const { posx, posy } = collision(x + width, y);
+            snake.structure[0] = { x: posx, y: posy }    
+            log();
         }
     }    
 
