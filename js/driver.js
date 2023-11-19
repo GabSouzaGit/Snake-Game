@@ -61,5 +61,5 @@ const tour = driver({
     ]
 });
 
-//tour.drive();
+tour.drive();
 

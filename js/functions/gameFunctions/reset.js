@@ -1,7 +1,6 @@
 import snake from "../../elements/snake.js";
 import defineKeyPressing from "./defineKeyPressing.js";
 import renderSnake from "./movimentation/renderSnake.js";
-import { canvas } from "../../constants/DEFAULT_CANVAS.js";
 import { width } from "../../constants/DEFAULT_DIMENSIONS.js";
 import createFood from "./points/createFood.js";
 

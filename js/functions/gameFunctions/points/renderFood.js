@@ -1,4 +1,4 @@
-import { canvas, context } from "../../../constants/DEFAULT_CANVAS.js";
+import { context } from "../../../constants/DEFAULT_CANVAS.js";
 import food from "../../../elements/food.js";
 import { width, height } from "../../../constants/DEFAULT_DIMENSIONS.js";
 import foodCollision from "./foodCollision.js";
