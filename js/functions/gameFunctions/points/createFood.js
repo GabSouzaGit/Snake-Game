@@ -3,12 +3,17 @@ import { width, height } from "../../../constants/DEFAULT_DIMENSIONS.js";
 import getRandom from "./getRandom.js";
 import food from "../../../elements/food.js";
 
-function createFood(){
-    const x = getRandom(0, canvas.width - width);
-    const y = getRandom(0, canvas.height - height);
+const positions = [];
+for(let x = 0; x < canvas.width - width; x += width){
+    positions[x / 20] = x;
+}
 
-    food.x = x;
-    food.y = y
+function createFood(){
+    const x = getRandom(0, positions.length - 1);
+    const y = getRandom(0, positions.length - 1);
+
+    food.x = positions[x];
+    food.y = positions[y];
 }
 
 export default createFood;
