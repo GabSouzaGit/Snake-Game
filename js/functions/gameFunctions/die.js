@@ -8,9 +8,10 @@ function die(){
     document.removeEventListener('keydown', event.listener);
     clearInterval(animation.id);
     statistics.deaths += 1;
+    statistics.updateStatistics();
     context.clearRect(0, 0, canvas.width, canvas.height);
     start.disabled = false;
-    console.log('Morreu x_x');
+    alert('Você perdeu!')
 }
 
 export default die;
