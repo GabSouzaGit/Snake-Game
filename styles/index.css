@@ -26,10 +26,15 @@ canvas {
     justify-content: space-evenly;
 }
 
-#statistics {
+#statistics{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 12px;
+    font-size: 18px;
+}
+
+#record {
     padding: 12px;
     font-size: 18px;
 }
