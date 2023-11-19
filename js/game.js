@@ -1,11 +1,11 @@
-import spawn from "./functions/gameFunctions/spawn.js";
+import reset from "./functions/gameFunctions/reset.js";
 import run from './functions/gameFunctions/run.js';
+import start from "./constants/START_BUTTON.js";
 
-const start = document.querySelector('#start');
 // Inicia a posição
-spawn();
 
 start.addEventListener('click', (event) => {
+    reset();
     run();
     event.target.disabled = true;
 });

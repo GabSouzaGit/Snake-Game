@@ -2,6 +2,7 @@ import { width, height } from "../../../constants/DEFAULT_DIMENSIONS.js";
 import snake from "../../../elements/snake.js";
 import moveSnake from "./moveSnake.js";
 import animation from "../../../elements/animation.js";
+import time from "../../../constants/TIME.js";
 
 /**
  * @description Retorna uma função que move o objeto "snake" pelo canvas de acordo com a tecla do teclado.
@@ -15,8 +16,6 @@ function log(){
 
 function listenMoviment(key){
     clearInterval(animation.id);
-    const time = 100;
-
     const permittedDirections = {
         'ArrowUp': () => {
             animation.id = setInterval(() => {
