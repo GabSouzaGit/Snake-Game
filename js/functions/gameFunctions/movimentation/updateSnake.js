@@ -9,6 +9,7 @@ import snake from "../../../elements/snake.js";
 
 function updateSnake(x, y, direction){
     snake.structure = [...snake.structure.slice(1), {direction, x, y}];
+    console.log({ last: snake.structure[0].direction, guide: snake.structure[1].direction })
 }
 
 export default updateSnake

@@ -12,12 +12,12 @@ import createFood from "./points/createFood.js";
 function reset(){
     snake.structure = [
         {
-            direction: 'ArrowLeft',
+            direction: '10',
             x: Math.floor(canvas.width / 2),
             y: Math.floor(canvas.height / 2)
         },
         {
-            direction: 'ArrowLeft',
+            direction: '10',
             x: Math.floor(canvas.width / 2) - width,
             y: Math.floor(canvas.height / 2)
         }

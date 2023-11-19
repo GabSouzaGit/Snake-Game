@@ -16,7 +16,7 @@ function listenMoviment(key){
         'ArrowUp': () => {
             animation.id = setInterval(() => {
                 const { x, y } = snake.structure[snake.structure.length - 1];
-                const up = moveSnake(x, y - height, key);
+                const up = moveSnake(x, y - height, '10');
                 up();
             }, time);
         },
@@ -24,7 +24,7 @@ function listenMoviment(key){
         'ArrowDown': () => {
             animation.id = setInterval(() => {  
                 const { x, y } = snake.structure[snake.structure.length - 1];
-                const down = moveSnake(x, y + height, key);
+                const down = moveSnake(x, y + height, '11');
                 down();
             }, time);
         },
@@ -32,7 +32,7 @@ function listenMoviment(key){
         'ArrowLeft': () => {
             animation.id = setInterval(() => { 
                 const { x, y } = snake.structure[snake.structure.length - 1];
-                const left = moveSnake(x - width, y, key);
+                const left = moveSnake(x - width, y, '00');
                 left();
             }, time);
         },
@@ -40,7 +40,7 @@ function listenMoviment(key){
         'ArrowRight': () => {
             animation.id = setInterval(() => {
                 const { x, y } = snake.structure[snake.structure.length - 1];
-                const right = moveSnake(x + width, y, key);
+                const right = moveSnake(x + width, y, '01');
                 right();    
             }, time);
         }

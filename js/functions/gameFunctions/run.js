@@ -10,7 +10,7 @@ import time from '../../constants/TIME.js';
 function run(){
     animation.id = setInterval(() => {
         const { x, y } = snake.structure[snake.structure.length - 1];
-        const up = moveSnake(x, y - height, "ArrowUp");
+        const up = moveSnake(x, y - height, "10");
         up();
     }, time)
 }
