@@ -1,8 +1,7 @@
 import { width, height } from "../../../constants/DEFAULT_DIMENSIONS.js";
 import snake from "../../../elements/snake.js";
 import moveSnake from "./moveSnake.js";
-import snakeCollision from "./snakeCollision.js";
-import updateSnake from "./updateSnake.js";
+import animation from "../../../elements/animation.js";
 
 /**
  * @description Retorna uma função que move o objeto "snake" pelo canvas de acordo com a tecla do teclado.
@@ -15,31 +14,40 @@ function log(){
 }
 
 function listenMoviment(key){
-    const { x, y } = snake.structure[snake.structure.length - 1];
+    clearInterval(animation.id);
+    const time = 100;
 
     const permittedDirections = {
         'ArrowUp': () => {
-            const up = moveSnake(x, y - height, key);
-            up();
-            log();
+            animation.id = setInterval(() => {
+                const { x, y } = snake.structure[snake.structure.length - 1];
+                const up = moveSnake(x, y - height, key);
+                up();
+            }, time);
         },
     
         'ArrowDown': () => {
-            const down = moveSnake(x, y + height, key);
-            down();
-            log();
+            animation.id = setInterval(() => {    
+                const { x, y } = snake.structure[snake.structure.length - 1];
+                const down = moveSnake(x, y + height, key);
+                down();
+            }, time);
         },
         
         'ArrowLeft': () => {
-            const left = moveSnake(x - width, y, key);
-            left();
-            log();
+            animation.id = setInterval(() => {    
+                const { x, y } = snake.structure[snake.structure.length - 1];
+                const left = moveSnake(x - width, y, key);
+                left();
+            }, time);
         },
 
         'ArrowRight': () => {
-            const right = moveSnake(x + width, y, key);
-            right();
-            log();
+            animation.id = setInterval(() => {
+                const { x, y } = snake.structure[snake.structure.length - 1];
+                const right = moveSnake(x + width, y, key);
+                right();    
+            }, time);
         }
     }    
 

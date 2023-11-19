@@ -17,7 +17,7 @@ const snake = {
     ]
 }
 
-for(let i = 2; i < 22; i++){
+for(let i = 2; i < 7; i++){
     snake.structure[i] = {
         direction: 'ArrowLeft',
         x: Math.floor(canvas.width / 2) - width * i,
