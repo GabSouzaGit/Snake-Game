@@ -39,6 +39,13 @@ const tour = driver({
             }
         },
         {
+            element: "#record",
+            popover: {
+                title: "Alcance a maior pontuação",
+                description: "Faça a maior pontuação possivel, coletando as comidas no caminho."
+            }
+        },
+        {
             element: "#menu",
             popover: {
                 title: "Configurações",
