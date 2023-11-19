@@ -3,6 +3,7 @@ import defineKeyPressing from "./defineKeyPressing.js";
 import renderSnake from "./movimentation/renderSnake.js";
 import { canvas } from "../../constants/DEFAULT_CANVAS.js";
 import { width } from "../../constants/DEFAULT_DIMENSIONS.js";
+import createFood from "./points/createFood.js";
 
 /**
  * @description Inicia a "snake" no centro do canvas.
@@ -21,8 +22,8 @@ function reset(){
             y: Math.floor(canvas.height / 2)
         }
     ]
-
     defineKeyPressing();
+    createFood();
     renderSnake();
 }
 

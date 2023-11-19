@@ -10,10 +10,6 @@ import time from "../../../constants/TIME.js";
  * @returns {function} Função relacionada a chave do teclado.
  */
 
-function log(){
-    //console.log(snake.structure)
-}
-
 function listenMoviment(key){
     clearInterval(animation.id);
     const permittedDirections = {
@@ -26,7 +22,7 @@ function listenMoviment(key){
         },
     
         'ArrowDown': () => {
-            animation.id = setInterval(() => {    
+            animation.id = setInterval(() => {  
                 const { x, y } = snake.structure[snake.structure.length - 1];
                 const down = moveSnake(x, y + height, key);
                 down();
@@ -34,7 +30,7 @@ function listenMoviment(key){
         },
         
         'ArrowLeft': () => {
-            animation.id = setInterval(() => {    
+            animation.id = setInterval(() => { 
                 const { x, y } = snake.structure[snake.structure.length - 1];
                 const left = moveSnake(x - width, y, key);
                 left();
