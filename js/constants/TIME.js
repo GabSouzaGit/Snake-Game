@@ -1,3 +1,3 @@
-const time = 80;
+const time = 60;
 
 export default time;
