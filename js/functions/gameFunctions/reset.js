@@ -13,13 +13,13 @@ function reset(){
     snake.structure = [
         {
             direction: '10',
-            x: Math.floor(canvas.width / 2),
-            y: Math.floor(canvas.height / 2)
+            x: 200,
+            y: 200
         },
         {
             direction: '10',
-            x: Math.floor(canvas.width / 2) - width,
-            y: Math.floor(canvas.height / 2)
+            x: 200 - width,
+            y: 200
         }
     ]
     defineKeyPressing();

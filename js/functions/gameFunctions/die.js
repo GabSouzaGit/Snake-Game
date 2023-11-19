@@ -7,6 +7,7 @@ function die(){
     document.removeEventListener('keydown', event.listener);
     clearInterval(animation.id);
     statistics.deaths += 1;
+    statistics.points = 0;
     statistics.updateStatistics();
     start.disabled = false;
 }

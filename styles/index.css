@@ -8,8 +8,10 @@
 
 canvas {
     height: 500px;
-    width: 550px;
+    width: 500px;
     border: 2px solid var(--default-text);
+    padding: 0;
+    margin: 0;
 }
 
 #game {
