@@ -14,7 +14,7 @@ function defineKeyPressing(){
         }
     }
 
-    document.addEventListener('keydown', keyPressing);
+    document.addEventListener('keyup', keyPressing);
     event.listener = keyPressing;
 }
 
